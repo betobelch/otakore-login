@@ -341,7 +341,7 @@
         return;
       }
 
-      // Get form data
+      // Obtenha dados do formulário
       const formData = {
         email: document.getElementById('email').value,
         username: document.getElementById('username').value,
@@ -351,16 +351,16 @@
       console.log('Form submitted:', formData);
       alert('Cadastro realizado com sucesso!');
       
-      // Reset form
+      // Redefinir formulário
       form.reset();
     });
 
-    // Google button click
+    // Click no botão Google
     googleBtn.addEventListener('click', function() {
       alert('Redirecionando para login com Google...');
     });
 
-    // Add input focus effects
+    // Adiciona efeitos de foco de input
     const inputs = document.querySelectorAll('.form-input');
     inputs.forEach(input => {
       input.addEventListener('focus', function() {
